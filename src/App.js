@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Dropdown from './components/Dropdown';
+import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import Scrolllinks from './components/Scrolllinks';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +27,9 @@ function App() {
 
   return (
     <>
-      <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
-      <Scrolllinks />
+      <Navbar toggle={toggle} />
+      <Hero />
     </>
   );
 }

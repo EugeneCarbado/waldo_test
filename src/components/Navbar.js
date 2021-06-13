@@ -4,7 +4,7 @@ import logo from '../images/Waldo-Logo.svg';
 
 const Navbar = ({ toggle }) => {
     return (
-        <nav className="bg-white relative font-mono" role="navigation">
+        <nav className="relative font-mono" role="navigation">
             <div className="flex justify-between items-center h-16">
                 <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
                     <svg 
@@ -29,6 +29,11 @@ const Navbar = ({ toggle }) => {
                 </div>
                 <Link className="p-8 text-blue-waldo underline" to="/menu">US</Link>
             </div>
+            <div className="flex flex-row ml-5 mt-5 mb-5 text-blue-waldo space-x-10 whitespace-nowrap overflow-x-scroll uppercase">
+                <Link className="box-border">Hydra Boost Daily Lenses</Link>
+                <Link className="box-border">Blue Light Glasses</Link>
+                <Link className="box-border">Hydration Drops</Link>
+        </div>
         </nav>
     )
 }

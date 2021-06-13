@@ -5,6 +5,12 @@ module.exports = {
     colors: {
       blue: {
         waldo: '#0032a0'
+      },
+      orange: {
+        waldo: '#fe5000'
+      },
+      grey: {
+        waldo: '#f8f8f8'
       }
     },
     extend: {},
