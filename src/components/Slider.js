@@ -31,10 +31,9 @@ const Slider = () => {
       pagination={{ clickable: true }}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-      className="bg-grey-waldo md:w-3/4 md:h-1/2"
+      className="bg-grey-waldo "
     >
       <SwiperSlide className="static md:w-20 md:h-20">
-          <img className="absolute top-72 left-16" src={imageLimited} alt="limited time only" />
           <img className="absolute top-40 right-1 transform scale-75" src={image5} alt="waldo blue light glasses" />
       </SwiperSlide>
       <SwiperSlide className="static">
@@ -44,7 +43,7 @@ const Slider = () => {
           <img src={image7} alt="waldo lady shades" />
       </SwiperSlide>
       <SwiperSlide>
-          <img src={image8} alt="waldo guy mens shades" className="absolute top-32 transform scale-110" />
+          <img src={image8} alt="waldo guy mens shades" className="absolute md:top-32 transform scale-110" />
       </SwiperSlide>
     </Swiper>
   );

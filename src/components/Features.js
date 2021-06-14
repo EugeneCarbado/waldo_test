@@ -19,7 +19,7 @@ const Features = () => {
                     <p className="font-light">Free delivery</p>
                 </div>
             </div>
-            <button className="bg-orange-waldo hover:bg-blue-waldo uppercase text-sm text-white font-bold mt-5 w-full h-16">
+            <button className="bg-orange-waldo hover:bg-blue-waldo uppercase text-sm text-white font-bold mt-5 w-full h-16 lg:w-44 lg:h-14">
                 Get Started
             </button>
         </div>
