@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# WALDO Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a submission for my [WALDO Test](https://waldo-test.vercel.app/) I was given the task of recreating a design from XD using React and Tailwindcss. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The test](#the-test)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### The test
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+When finished the app should:
 
-### `npm test`
+- View the optimal layout for the site depending on their device's screen size
+- Include all assests presented in the design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+![](./src/images/desktop-1.png)
+![](./src/images/desktop-2.png)
+![](./src/images/desktop-3.png)
+![](./src/images/desktop-4.png)
+![](./src/images/mobile-1.png)
+![](./src/images/mobile-2.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Test Solution Github URL: [Test Solution Github URL](https://github.com/EugeneCarbado/waldo_test)
+- Live Site URL: [Live site for my solution URL](https://waldo-test.vercel.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+For my process I was teasked to use React and Tawilwindcss. For the carousel I used a node package called Swiperjs. This is a fully customisable carousel package that can be instantly added to any React project easily. The Test also included a mobile first approach.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built with
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- Tailwindcss
+- SVG's
+- Mobile-first workflow
+- SwiperJs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### What I learned
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+It was my first time using Tailwindcss and it was a very interesting process. Mixing it with React seemed a bit confusing at first but with a steady workflow I was soon able to achieve as close to the results I desired. The documentation is very easy to follow and there are numerous videos for more in depth know how.
 
-## Learn More
+### Continued development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+It would certainly be a good weapon in my arsenal to use Tailwind. I would like to use more features for animations and UI interactivity.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Useful resources
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Getting started with Tailwind CSS](https://tailwindcss.com/docs) - Documents are the first place I look when I would like to use a new framework.
+- [Make a React Website with Tailwind CSS Tutorial](https://www.youtube.com/watch?v=gOQ31Kc8H5E&t=1102s) - I used this video by Brian Design to help me get the basics of how to implement Tailwind with React.
