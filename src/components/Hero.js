@@ -5,7 +5,7 @@ import Slider from './Slider';
 
 const Hero = () => {
     return (
-        <div className="p-4">
+        <div className="container mx-auto p-4 md:flex flex-row-reverse">
             <Slider />
             <Features />
         </div>
