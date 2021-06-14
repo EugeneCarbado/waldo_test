@@ -1,9 +1,24 @@
+@font-face {
+    font-family: 'FS Lola regular';
+    src: url('fonts/FSLola-Regular.otf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {
+    font-family: 'FS Lola regular';
+}
+
+.swiper-container {
+    height: 550px;
+}
+
 .swiper-pagination {
     margin-bottom: 50px;
 }
 
 .swiper-pagination-bullet {
-    background: #fe5000;
+    background: #fe5000 !important;
 }
 
 button {

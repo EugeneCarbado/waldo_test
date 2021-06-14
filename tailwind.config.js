@@ -11,6 +11,9 @@ module.exports = {
       },
       grey: {
         waldo: '#f8f8f8'
+      },
+      white: {
+        waldo: '#ffffff'
       }
     },
     extend: {},
