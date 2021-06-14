@@ -29,7 +29,7 @@ const Navbar = ({ toggle }) => {
                         />
                     </svg>
                 </div>
-                <Link to='/'><img src={logo} alt="Waldo logo" /></Link>
+                <Link to='/'><img src={logo} alt="Waldo logo" className="ml-2 mr-8" /></Link>
                 <div className="uppercase text-blue-waldo lg:block hidden">
                         <Link className="p-2 text-orange-waldo hover:text-blue-waldo" to="/get-started">Get started</Link>
                         <Link className="p-2 hover:text-orange-waldo" to="/about-us">About Us
