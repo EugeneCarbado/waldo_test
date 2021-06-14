@@ -2,10 +2,12 @@
 import SwiperCore, { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../node_modules/swiper/';
+import '../styles.css';
 
 // Import Swiper styles
 import 'swiper/swiper.scss';
 import "swiper/components/pagination/pagination.min.css";
+
 
 
 // Images for slides
@@ -34,16 +36,16 @@ const Slider = () => {
       className="bg-grey-waldo "
     >
       <SwiperSlide className="static md:w-20 md:h-20">
-          <img className="absolute top-40 right-1 transform scale-75" src={image5} alt="waldo blue light glasses" />
+          <img className="absolute top-40 right-1 transform scale-75 " src={image5} alt="waldo blue light glasses" />
       </SwiperSlide>
       <SwiperSlide className="static">
-          <img className="absolute top-40 transform scale-75" src={image6} alt="waldo package" />
+          <img className="absolute top-40 transform scale-75 " src={image6} alt="waldo package" />
       </SwiperSlide>
       <SwiperSlide className="">
-          <img src={image7} alt="waldo lady shades" />
+          <img src={image7} alt="waldo lady shades" className="" />
       </SwiperSlide>
       <SwiperSlide>
-          <img src={image8} alt="waldo guy mens shades" className="absolute md:top-32 transform scale-110" />
+          <img src={image8} alt="waldo guy mens shades" className="absolute top-32 transform scale-110 " />
       </SwiperSlide>
     </Swiper>
   );

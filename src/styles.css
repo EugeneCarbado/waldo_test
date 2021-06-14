@@ -1,0 +1,12 @@
+.swiper-pagination {
+    margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+    background: #fe5000;
+}
+
+button {
+    color: white;
+    outline: none;
+}

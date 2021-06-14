@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/Waldo-Logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = ({ toggle }) => {
     return (
@@ -29,10 +31,14 @@ const Navbar = ({ toggle }) => {
                 </div>
                 <Link to='/' className="pl-8"><img src={logo} alt="Waldo logo" /></Link>
                 <div className="uppercase text-blue-waldo lg:block hidden">
-                        <Link className="p-4 text-orange-waldo hover:text-blue-waldo" to="/about">Get started</Link>
-                        <Link className="p-4 hover:text-orange-waldo" to="/">About Us</Link>
-                        <Link className="p-4 hover:text-orange-waldo" to="/">Login</Link>
-                        <Link className="p-8 text-blue-waldo underline hover:text-orange-waldo" to="/menu">US</Link>
+                        <Link className="p-2 text-orange-waldo hover:text-blue-waldo" to="/get-started">Get started</Link>
+                        <Link className="p-2 hover:text-orange-waldo" to="/about-us">About Us
+                            <FontAwesomeIcon className="text-xs mb-px ml-1" icon={faChevronDown} />
+                        </Link>
+                        <Link className="p-2 hover:text-orange-waldo" to="/">Login</Link>
+                        <Link className="pr-4 pl-2 text-blue-waldo underline hover:text-orange-waldo" to="/us-gb-eu-se">US
+                            <FontAwesomeIcon className="text-xs mb-px ml-1" icon={faChevronDown} />
+                        </Link>
                 </div>
                 <Link className="p-8 text-blue-waldo underline lg:hidden" to="/menu">US</Link>
             </div>

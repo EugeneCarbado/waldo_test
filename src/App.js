@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './index.css';
 import Dropdown from './components/Dropdown';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Features = () => {
     return (
         <div className="lg:bg-grey-waldo lg:p-16">
@@ -19,7 +20,7 @@ const Features = () => {
                     <p className="font-light">Free delivery</p>
                 </div>
             </div>
-            <button className="bg-orange-waldo hover:bg-blue-waldo uppercase text-sm text-white font-bold mt-5 w-full h-16 lg:w-44 lg:h-14">
+            <button className="bg-orange-waldo hover:bg-blue-waldo uppercase text-sm text-white font-extralight mt-5 w-full h-16 lg:w-44 lg:h-14">
                 Get Started
             </button>
         </div>
