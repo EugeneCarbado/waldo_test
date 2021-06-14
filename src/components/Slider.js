@@ -3,6 +3,7 @@ import SwiperCore, { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../../node_modules/swiper/';
 import '../styles.css';
+import { useState, useEffect } from 'react';
 
 // Import Swiper styles
 import 'swiper/swiper.scss';
@@ -23,7 +24,30 @@ import image8 from '../images/male_model_sunglasses_desktop.png';
 // install Swiper components
 SwiperCore.use([ Pagination, Autoplay ]);
 
+function getWindowDimensions() {
+  const { innerWidth: width } = window;
+  return {
+    width
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+
 const Slider = () => {
+  const { width } = useWindowDimensions();
   return (
     <Swiper
       spaceBetween={60}
@@ -39,16 +63,16 @@ const Slider = () => {
       className="bg-grey-waldo"
     >
       <SwiperSlide>
-        {window.innerWidth < 768 ? ( <img className="absolute top-44 right-1 transform scale-75 lg:block" src={image1} alt="waldo blue light glasses" /> ) : ( <img className="absolute top-24 right-1 transform scale-75 lg:block" src={image5} alt="waldo blue light glasses" /> )}
+        { width < 768 ? ( <img className="absolute top-44 right-1 transform scale-75 lg:block" src={image1} alt="waldo blue light glasses" /> ) : ( <img className="absolute top-24 right-1 transform scale-75 lg:block" src={image5} alt="waldo blue light glasses" /> )}
       </SwiperSlide>
       <SwiperSlide>
-        {window.innerWidth < 768 ? (<img className="absolute top-40 transform scale-50 " src={image2} alt="waldo package" />) : (<img className="absolute top-40 right-8 transform scale-50 " src={image6} alt="waldo package" />)}
+        { width < 768 ? (<img className="absolute top-40 transform scale-50 " src={image2} alt="waldo package" />) : (<img className="absolute top-40 right-8 transform scale-50 " src={image6} alt="waldo package" />)}
       </SwiperSlide>
       <SwiperSlide>
-        {window.innerWidth < 768 ? (<img src={image3} alt="waldo female shades" className="absolute bottom-0" />) : (<img src={image7} alt="waldo female shades" className="absolute -bottom-10 transform scale-90" />)}
+        { width < 440 ? (<img src={image3} alt="waldo female shades" className="absolute bottom-0" />) : (<img src={image7} alt="waldo female shades" className="absolute -bottom-10 transform scale-90" />)}
       </SwiperSlide>
       <SwiperSlide>
-        {window.innerWidth < 768 ? (<img src={image4} alt="waldo male shades" className="absolute bottom-0" />) : (<img src={image8} alt="waldo male shades" className="absolute -bottom-10 transform scale-90 " />)}
+        { width < 440 ? (<img src={image4} alt="waldo male shades" className="absolute bottom-0" />) : (<img src={image8} alt="waldo male shades" className="absolute -bottom-10 transform scale-90 " />)}
       </SwiperSlide>
     </Swiper>
   );
