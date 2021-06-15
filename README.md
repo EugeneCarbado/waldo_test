@@ -13,7 +13,6 @@ This is a submission for my [WALDO Test](https://waldo-test.vercel.app/) I was g
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview
 
@@ -40,7 +39,7 @@ When finished the app should:
 
 ## My process
 
-For my process I was teasked to use React and Tawilwindcss. For the carousel I used a node package called Swiperjs. This is a fully customisable carousel package that can be instantly added to any React project easily. The Test also included a mobile first approach. I also used .map() to filter through an object of the images and their respective alt's and classes.
+For my process I was tasked to use React and Tawilwindcss. For the carousel I used a node package called Swiperjs. This is a fully customisable carousel package that can be instantly added to any React project easily. The Test also included a mobile first approach. I also used .map() to map through an object of data filled with the images and their respective alt's and classes. On mobile there is a hamburger added with a dropdown list once clicked which I implemented with useState, useEffect. I tried to mimic the design of the dropdown menu from the Waldo homepage.
 
 ### Built with
 
