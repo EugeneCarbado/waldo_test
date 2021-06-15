@@ -5,6 +5,13 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: 'FS Lola medium';
+    src: url('fonts/fslola-medium-webfont.woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
 body {
     font-family: 'FS Lola regular';
 }
@@ -24,4 +31,12 @@ body {
 button {
     color: white;
     outline: none;
+}
+
+h1 {
+    font-family: 'FS Lola medium';
+}
+
+h4, h6 {
+    font-family: 'FS Lola medium';
 }
