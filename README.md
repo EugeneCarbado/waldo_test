@@ -40,7 +40,7 @@ When finished the app should:
 
 ## My process
 
-For my process I was teasked to use React and Tawilwindcss. For the carousel I used a node package called Swiperjs. This is a fully customisable carousel package that can be instantly added to any React project easily. The Test also included a mobile first approach.
+For my process I was teasked to use React and Tawilwindcss. For the carousel I used a node package called Swiperjs. This is a fully customisable carousel package that can be instantly added to any React project easily. The Test also included a mobile first approach. I also used .map() to filter through an object of the images and their respective alt's and classes.
 
 ### Built with
 
@@ -49,6 +49,7 @@ For my process I was teasked to use React and Tawilwindcss. For the carousel I u
 - SVG's
 - Mobile-first workflow
 - SwiperJs
+- Javascript
 
 ### What I learned
 
